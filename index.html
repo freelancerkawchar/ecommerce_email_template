@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin:0; padding:0; border:0}*
+        body{
+            margin: 0 auto;
+        }
+        #wrapper{
+            max-width:690px;
+            margin: 0 auto;
+            overflow:hidden;
+            background: white;
+            margin-top:20px;
+            margin-bottom:50px;
+            padding-bottom:20px;
+            padding-top:10px;
+            border:1px solid black;
+        }
+        /* Header Section*/
+        .header{
+            width:100%;
+            overflow: hidden;        
+        }
+        .header .logo{
+            width:80%;
+            margin: 0 auto;
+            overflow: hidden;    
+        }
+        .header .logo a img{
+            width:100%;
+            margin: 0 auto;
+            height: 100px;   
+            overflow: hidden;  
+        }
+
+        /* Template Main Title*/
+        .title{
+            text-align:center;
+            font-weight: bold;
+            border: 2px solid #82C3BD;   
+            margin-bottom:20px; 
+            padding: 10px 0px;
+        }
+        .title p{
+            width: 90%;
+            margin: 0 auto;
+            padding: 5px 0px;
+         
+        }
+        .title a{
+            text-decoration:none;
+        }
+        @media only screen and (max-width:2000px){
+            .title p{
+                font-size:20px;
+            }
+        }
+        @media only screen and (max-width:480px){
+            .title p{
+                font-size:10px;
+            }        
+        }
+
+        /* Product Section*/
+        .product_wrapper{
+            width:100%;
+            overflow:hidden;
+        }
+        .product_wrapper .product_row{
+            width:100%;
+           overflow: hidden;
+           padding-bottom:10px;
+        }
+        .product_wrapper .product_row .product_single{
+           width:30%;
+           margin-right:1.5%;
+           margin-left:1.5%;
+           overflow: hidden;
+           float:left;
+           text-align:center;
+           
+        }
+        .product_wrapper .product_row .product_single a{ text-decoration: none; }
+        .product_wrapper .product_row .product_single a img{
+            width: 100% !important;
+            overflow:hidden;
+         }
+         .dollar{
+             font-size:30px;
+             color:blue;
+         }
+         .price{
+             font-size:60px;
+             color:blue;
+         }
+         .product_wrapper .product_row .product_single .discount, .product_wrapper .product_row .product_single .freeshipping{
+             color:red;
+         }
+        .product_wrapper .product_row .product_single h2{
+            margin-top:10px;
+            overflow: hidden;
+        }
+        .product_wrapper .product_row .product_single h3{
+            margin-top:10px;
+            overflow: hidden;
+        }
+        .product_wrapper .product_row .product_single .product_image{
+            border:1px solid red;
+            overflow: hidden;
+        }
+        @media only screen and (max-width:2000px){
+            .product_wrapper .product_row .product_single a img{
+                height:170px;
+                overflow:hidden;
+            }
+            .product_wrapper .product_row .product_single h2{
+                
+            }
+            .product_wrapper .product_row .product_single h3{
+                font-size:20px;
+            }
+        }
+        @media only screen and (max-width:480px){
+            .product_wrapper .product_row .product_single a img{
+                height:100px;
+                overflow: hidden;
+            }  
+            .product_wrapper .product_row .product_single h2{
+
+            }
+            .product_wrapper .product_row .product_single h3{
+                font-size:14px;
+            }
+            .product_wrapper .product_row .product_single .discount{
+                font-size:16px;
+            }
+
+        }
+        /*footer and hot deals section*/
+        
+        .footer{
+            text-align:center;
+            border-top:3px solid #ddd;
+            border-bottom: 0px solid #ddd;
+            padding: 20px 0px 0px 0px;
+            margin: 0 auto;
+        }
+        .footer .about{
+            padding-bottom:20px;
+        }
+        .footer .about .copyright{
+            padding-bottom:5px;
+            text-align:center;
+            font-size:20px;
+        }
+        .footer .about .address{
+            padding-bottom:3px;
+            font-size:23px;
+        }
+        .footer .about .mail{
+            color:red;
+            font-size:20px;
+            text-decoration:underline;
+        }
+   
+        /*footer content unsubscribe*/
+        .unsubscribe{
+            padding-bottom:10px;
+        }
+        .unsubscribe h4{
+            padding:3px;
+            font-size:18px;
+        }
+        /* Hot Deals section*/
+        .hot_deals{
+            width:100%;
+            padding:5px;
+            height:400px;
+        }
+        .hot_deals img{
+            width:100%;
+            height:100%;
+        }
+    
+    </style>
+</head>
+<body style="background:#ddd;">	
+<div id="wrapper">
+
+<!--Header Section-->
+        <div class="header" style="">
+            <div class="logo"> <!-- Logo image link here-->
+                <a href="https://theeliteoutlet.com/collections/hot-deals"><img src="https://gallery.mailchimp.com/403eb6df874f8b7f6363d84ce/images/035f062f-e6d9-4798-93e9-609ac769e5bd.png" alt=""></a>
+            </div>
+        </div>
+<!-- Template Main title -->
+        <div class="title"> <!-- Your Title here-->
+            <a href="https://theeliteoutlet.com/collections/hot-deals"><p>AMAZING DEALS - UP TO 70% OFF - FREE SHIPPING</p></a>
+            <p style="color:blue;">Come and Shop for Some Amazing Deals</p>
+            <p style="color:blue;">At the <a href="https://theeliteoutlet.com/collections/hot-deals">THE ELITE OUTLET</a></p>
+        </div>
+
+            
+    <!-- Start Product wrappper-->
+    <div class="product_wrapper">
+		<!-- First Row-->
+			<div class="product_row"> 
+			<!-- Product 01-->
+				<div class="product_single product_first">
+					<div class="product_image" ><!-- Product image--> <!-- https://gallery.mailchimp.com/403eb6df874f8b7f6363d84ce/images/5afd3a87-c2e5-4686-8b95-45d978c96872.jpg-->
+						<a style="" href="https://theeliteoutlet.com/collections/hot-deals/products/stainless-steel-chopper-fda-approved"><img  src="https://gallery.mailchimp.com/403eb6df874f8b7f6363d84ce/images/5afd3a87-c2e5-4686-8b95-45d978c96872.jpg" alt=""></a>
+					</div>
+					<a href="https://theeliteoutlet.com/collections/hot-deals/products/stainless-steel-chopper-fda-approved"><h3 class="product_title">Stainless Steel Chopper</h3> </a> <!-- Product Title-->
+					<h2 class="discount">55% OFF</h2> <!-- Product Discount-->
+					<h2 class="price"><sup class="dollar">$</sup>13</h2> <!-- Product Price-->
+					<h3 class="freeshipping">FREE SHIPPING</h3> <!-- Product Description-->
+				</div>
+			<!-- Product 02-->
+				<div class="product_single">
+					<div class="product_image" style=""><!-- Product image--> <!-- https://gallery.mailchimp.com/403eb6df874f8b7f6363d84ce/images/74ba91d4-8882-489f-8039-5f2459b9276c.jpg -->
+						<a class="" href="https://theeliteoutlet.com/collections/hot-deals/products/17-x-17-multicolor-tailored-european-cushion"><img src=" https://gallery.mailchimp.com/403eb6df874f8b7f6363d84ce/images/74ba91d4-8882-489f-8039-5f2459b9276c.jpg" alt=""></a>
+					</div>
+					<a href="https://theeliteoutlet.com/collections/hot-deals/products/17-x-17-multicolor-tailored-european-cushion"><h3 class="product_title">17" × 17" Cushions</h3> </a> <!-- Product Title-->
+					<h2 class="discount">65% OFF</h2> <!-- Product Discount-->
+					<h2 class="price"><sup class="dollar">$</sup>12</h2> <!-- Product Price-->
+					<h3 class="freeshipping">FREE SHIPPING</h3> <!-- Product Description-->
+				</div>
+			<!-- Product 03-->
+				<div class="product_single"> <!--https://gallery.mailchimp.com/403eb6df874f8b7f6363d84ce/images/af37995f-5141-44b7-b4d7-bc1fb704a01a.png -->
+					<div class="product_image"><!-- Product image-->
+						<a href="https://theeliteoutlet.com/collections/hot-deals/products/beard-straightener-for-men"><img src="https://gallery.mailchimp.com/403eb6df874f8b7f6363d84ce/images/af37995f-5141-44b7-b4d7-bc1fb704a01a.png" alt=""></a>
+					</div>
+					<a href="https://theeliteoutlet.com/collections/hot-deals/products/beard-straightener-for-men"><h3 class="product_title">Mens Beard Straightener</h3> </a> <!-- Product Title-->
+					<h2 class="discount">45% OFF</h2> <!-- Product Discount-->
+					<h2 class="price"><sup class="dollar">$</sup>15</h2> <!-- Product Price-->
+					<h3 class="freeshipping">FREE SHIPPING</h3> <!-- Product Description-->
+				</div>
+			</div> <!-- End Product row-->
+
+		<!-- Product Second row-->
+			<div class="product_row"> 
+			<!-- Product 04-->
+				<div class="product_single">
+					<div class="product_image"><!-- Product image-->
+						<a href="https://theeliteoutlet.com/collections/hot-deals/products/40-colors-professional-eyeshadow"><img src="https://gallery.mailchimp.com/403eb6df874f8b7f6363d84ce/images/d18d260e-2e34-4adf-9516-578efaec7ffd.jpg" alt=""></a>
+					</div>
+					<a href="https://theeliteoutlet.com/collections/hot-deals/products/40-colors-professional-eyeshadow"><h3 class="product_title">40 Colours Eyeshadows</h3> </a> <!-- Product Title-->
+					<h2 class="discount">60% OFF</h2> <!-- Product Discount-->
+					<h2 class="price"><sup class="dollar">$</sup>10</h2> <!-- Product Price-->
+					<h3 class="freeshipping">FREE SHIPPING</h3> <!-- Product Description-->
+				</div>
+			<!-- Product 05-->
+				<div class="product_single">
+					<div class="product_image"><!-- Product image-->
+						<a href="https://theeliteoutlet.com/collections/hot-deals/products/mens-oxford-shirts-several-designs"><img src="https://gallery.mailchimp.com/403eb6df874f8b7f6363d84ce/images/ac75a4e8-d656-437f-aee8-a39ed4e3a46a.jpg" alt=""></a>
+					</div>
+					<a href="https://theeliteoutlet.com/collections/hot-deals/products/mens-oxford-shirts-several-designs"><h3 class="product_title">Men's Shirts</h3> </a> <!-- Product Title-->
+					<h2 class="discount">60% OFF</h2> <!-- Product Discount-->
+					<h2 class="price"><sup class="dollar">$</sup>19</h2> <!-- Product Price-->
+					<h3 class="freeshipping">FREE SHIPPING</h3> <!-- Product Description-->
+				</div>
+			<!-- Product 06-->
+				<div class="product_single">
+					<div class="product_image"><!-- Product image-->
+						<a href="https://theeliteoutlet.com/collections/hot-deals/products/4pcs-set-20-cabinet-clip-n-store-kitchen-organizer"><img src="https://gallery.mailchimp.com/403eb6df874f8b7f6363d84ce/images/03548971-f7de-4e64-b9b2-41af10d68665.jpg" alt=""></a>
+					</div>
+					<a href="https://theeliteoutlet.com/collections/hot-deals/products/4pcs-set-20-cabinet-clip-n-store-kitchen-organizer"><h3 class="product_title">20 PCS Spice Cabinet Clips Organizer</h3> </a> <!-- Product Title-->
+					<h2 class="discount">45% OFF</h2> <!-- Product Discount-->
+					<h2 class="price"><sup class="dollar">$</sup>13</h2> <!-- Product Price-->
+					<h3 class="freeshipping">FREE SHIPPING</h3> <!-- Product Description-->
+				</div>
+			</div> <!-- End Product row-->
+
+		<!-- Product Third row-->
+			<div class="product_row">
+				<!-- Product 07-->
+				<div class="product_single">
+					<div class="product_image"><!-- Product image-->
+						<a href="https://theeliteoutlet.com/collections/hot-deals/products/led-flashing-glow-pet-dog-collar"><img src="https://gallery.mailchimp.com/403eb6df874f8b7f6363d84ce/images/0f2e0fa8-72ed-4aa0-9b61-d834fadd1a44.jpg" alt=""></a>
+					</div>
+					<a href="https://theeliteoutlet.com/collections/hot-deals/products/led-flashing-glow-pet-dog-collar"><h3 class="product_title">LED Dog Collar</h3> </a> <!-- Product Title-->
+					<h2 class="discount">50% OFF</h2> <!-- Product Discount-->
+					<h2 class="price"><sup class="dollar">$</sup>9</h2> <!-- Product Price-->
+					<h3 class="freeshipping">FREE SHIPPING</h3> <!-- Product Description-->
+				</div>
+			<!-- Product 08-->
+				<div class="product_single">
+					<div class="product_image"><!-- Product image-->
+						<a href="https://theeliteoutlet.com/collections/hot-deals/products/kids-school-bags"><img src="https://gallery.mailchimp.com/403eb6df874f8b7f6363d84ce/images/71f840b0-66d0-494a-a528-904c57c6abd3.png" alt=""></a>
+					</div>
+					<a href="https://theeliteoutlet.com/collections/hot-deals/products/kids-school-bags"><h3 class="product_title">Small Kids Bag</h3> </a> <!-- Product Title-->
+					<h2 class="discount">55% OFF</h2> <!-- Product Discount-->
+					<h2 class="price"><sup class="dollar">$</sup>12</h2> <!-- Product Price-->
+					<h3 class="freeshipping">FREE SHIPPING</h3> <!-- Product Description-->
+				</div>
+			<!-- Product 09-->
+				<div class="product_single">
+					<div class="product_image"><!-- Product image-->
+						<a href="https://theeliteoutlet.com/collections/hot-deals/products/2-in-1-charging-dock-for-apple"><img src="https://gallery.mailchimp.com/403eb6df874f8b7f6363d84ce/images/6e286ff9-063f-4f91-a573-84c974eade22.jpg" alt=""></a>
+					</div>
+					<a href="https://theeliteoutlet.com/collections/hot-deals/products/2-in-1-charging-dock-for-apple"><h3 class="product_title">2 In 1 Charging Dock</h3> </a> <!-- Product Title-->
+					<h2 class="discount">50% OFF</h2> <!-- Product Discount-->
+					<h2 class="price"><sup class="dollar">$</sup>16</h2> <!-- Product Price-->
+					<h3 class="freeshipping">FREE SHIPPING</h3> <!-- Product Description-->
+				</div>
+			</div> <!-- End Product row-->
+
+        <!-- Product four row-->
+            <div class="product_row">
+        <!-- Product 10-->
+                <div class="product_single">
+                    <div class="product_image"><!-- Product image-->
+                        <a href="https://theeliteoutlet.com/collections/hot-deals/products/mandoline-vegetable-slicer-with-6-blades"><img src="https://gallery.mailchimp.com/403eb6df874f8b7f6363d84ce/images/f25c191a-1b6c-4ba5-9fb5-0ea99024bc45.jpg" alt=""></a>
+                    </div>
+                    <a href="https://theeliteoutlet.com/collections/hot-deals/products/mandoline-vegetable-slicer-with-6-blades"><h3 class="product_title">6 Blade Vegetable Cutter</h3> </a> <!-- Product Title-->
+                    <h2 class="discount">46% OFF</h2> <!-- Product Discount-->
+                    <h2 class="price"><sup class="dollar">$</sup>18</h2> <!-- Product Price-->
+                    <h3 class="freeshipping">FREE SHIPPING</h3> <!-- Product Description-->
+                </div>
+            <!-- Product 11-->
+                <div class="product_single">
+                    <div class="product_image"><!-- Product image-->
+                        <a href="https://theeliteoutlet.com/collections/hot-deals/products/mens-fashion-watch"><img src="https://gallery.mailchimp.com/403eb6df874f8b7f6363d84ce/images/ddbff7ce-1a86-43da-90b9-d8bdb260b06c.jpg" alt=""></a>
+                    </div>
+                    <a href="https://theeliteoutlet.com/collections/hot-deals/products/mens-fashion-watch"><h3 class="product_title">  Men's Watch </h3> </a> <!-- Product Title-->
+                    <h2 class="discount">70% OFF</h2> <!-- Product Discount-->
+                    <h2 class="price"><sup class="dollar">$</sup>10</h2> <!-- Product Price-->
+                    <h3 class="freeshipping">FREE SHIPPING</h3> <!-- Product Description-->
+                </div>
+            <!-- Product 12-->
+                <div class="product_single">
+                    <div class="product_image"><!-- Product image-->
+                        <a href="https://theeliteoutlet.com/collections/hot-deals/products/geometry-crystal-leather-quartz-wristwatch"><img src="https://gallery.mailchimp.com/403eb6df874f8b7f6363d84ce/images/25ac0675-4f57-4382-825c-ef1ca681b2a6.jpg" alt=""></a>
+                    </div>
+                    <a href="https://theeliteoutlet.com/collections/hot-deals/products/geometry-crystal-leather-quartz-wristwatch"><h3 class="product_title">Ladies Watch</h3> </a> <!-- Product Title-->
+                    <h2 class="discount">70% OFF</h2> <!-- Product Discount-->
+                    <h2 class="price"><sup class="dollar">$</sup>12</h2> <!-- Product Price-->
+                    <h3 class="freeshipping">FREE SHIPPING</h3> <!-- Product Description-->
+                </div>
+            </div> <!-- End Product  row-->
+
+        <!-- Product Five row-->
+            <div class="product_row">
+                <!-- Product 13-->
+                <div class="product_single">
+                    <div class="product_image"><!-- Product image-->
+                        <a href="https://theeliteoutlet.com/collections/hot-deals/products/adjustable-apron-several-colours"><img src="https://gallery.mailchimp.com/403eb6df874f8b7f6363d84ce/images/56e6b915-c8fb-4dc2-b49e-7815dcaac020.png" alt=""></a>
+                    </div>
+                    <a href="https://theeliteoutlet.com/collections/hot-deals/products/adjustable-apron-several-colours"><h3 class="product_title">Adjustable Apron</h3> </a> <!-- Product Title-->
+                    <h2 class="discount">50% OFF</h2> <!-- Product Discount-->
+                    <h2 class="price"><sup class="dollar">$</sup>9</h2> <!-- Product Price-->
+                    <h3 class="freeshipping">FREE SHIPPING</h3> <!-- Product Description-->
+                </div>
+            <!-- Product 14-->
+                <div class="product_single">
+                    <div class="product_image"><!-- Product image-->
+                        <a href="https://theeliteoutlet.com/collections/hot-deals/products/9-x-9-microfiber-car-wash-towel"><img src="https://gallery.mailchimp.com/403eb6df874f8b7f6363d84ce/images/d91e29d5-f4fb-4055-8fd9-c57b7f5b4dd3.png" alt=""></a>
+                    </div>
+                    <a href="https://theeliteoutlet.com/collections/hot-deals/products/9-x-9-microfiber-car-wash-towel"><h3 class="product_title">10 Microfiber Car Towels</h3> </a> <!-- Product Title-->
+                    <h2 class="discount">55% OFF</h2> <!-- Product Discount-->
+                    <h2 class="price"><sup class="dollar">$</sup>12</h2> <!-- Product Price-->
+                    <h3 class="freeshipping">FREE SHIPPING</h3> <!-- Product Description-->
+                </div>
+        <!-- Product 15-->     
+                <div class="product_single">
+                    <div class="product_image"><!-- Product image-->
+                        <a href="https://theeliteoutlet.com/collections/hot-deals/products/refrigerator-storage-box-4-cases"><img src="https://gallery.mailchimp.com/403eb6df874f8b7f6363d84ce/images/af459835-0cf3-4eb9-b491-c596ea7c241a.jpg" alt=""></a>
+                    </div>
+                    <a href="https://theeliteoutlet.com/collections/hot-deals/products/refrigerator-storage-box-4-cases"><h3 class="product_title">Refrigerator Storage Box</h3> </a> <!-- Product Title-->
+                    <h2 class="discount">60% OFF</h2> <!-- Product Discount-->
+                    <h2 class="price"><sup class="dollar">$</sup>11</h1> <!-- Product Price-->
+                    <h3 class="freeshipping">FREE SHIPPING</h3> <!-- Product Description-->
+                </div>
+            </div> <!-- End  row-->
+
+
+
+        </div> <!-- End Product wrapper-->
+            
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Hot Deals-->
+       <a href="https://theeliteoutlet.com/collections/hot-deals"><div class="hot_deals"><img src="https://gallery.mailchimp.com/403eb6df874f8b7f6363d84ce/images/1f3ff206-18c5-4ee3-a5d7-91f5eeaa64b0.png" alt=""></div></a>
+	<!-- End Hot Deals-->
+	
+	<!-- Footer Section-->   
+        <div class="footer" style="margin: 0 auto;" >
+            <div class="about">
+                <p class="copyright">Copyright &copy; <a href="https://theeliteoutlet.com/">The Elite Outlet</a></p>
+                <p class="copyright">All right reserved</p>
+
+                <h3 class="address">Our mailing address is:</h3>
+                <p class="mail">info@theeliteoutlet.com</p>
+            </div>
+            <div class="unsubscribe">
+                <p>Want to change how to receive these email?</p>
+                <p>You can <a href="{{ update_profile }}">Update Your Preferences</a>  or <a href="{{ unsubscribe }}">Unsubscribe from this list</a></p>
+            </div>       
+        </div>
+        <!-- Update code here-->
+</div>
+<!-- End full wrapper-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
